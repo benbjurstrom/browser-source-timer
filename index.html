@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Source Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .example {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+        .param {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Browser Source Timer for OBS</h1>
+    
+    <p>This is a customizable countdown/countup timer designed for use as a browser source in OBS Studio.</p>
+    
+    <h2>Usage</h2>
+    <p>Add the timer URL as a browser source in OBS with the following parameters:</p>
+    
+    <div class="example">
+        <strong>Base URL:</strong> https://yourusername.github.io/browser-source-timer/timer.html
+    </div>
+    
+    <h3>Parameters:</h3>
+    <div class="param"><strong>time</strong> - Duration in seconds (e.g., 7500 for 2h 5m)</div>
+    <div class="param"><strong>colour</strong> - Text color in hex without # (e.g., 414141)</div>
+    <div class="param"><strong>size</strong> - Font size in pixels (e.g., 248)</div>
+    <div class="param"><strong>background</strong> - Background color in hex without # (e.g., transparent)</div>
+    <div class="param"><strong>radius</strong> - Border radius in pixels (e.g., 0)</div>
+    <div class="param"><strong>font</strong> - Google Font name with + for spaces (e.g., Anton)</div>
+    <div class="param"><strong>direction</strong> - CountDown or CountUp</div>
+    <div class="param"><strong>loop</strong> - true or false</div>
+    
+    <h3>Example URLs:</h3>
+    
+    <div class="example">
+        <strong>Countdown Timer:</strong><br>
+        timer.html?time=7500&colour=414141&size=248&background=transparent&radius=0&font=Anton&direction=CountDown&loop=false
+    </div>
+    
+    <div class="example">
+        <strong>Countup Timer:</strong><br>
+        timer.html?time=3600&colour=ff0000&size=200&background=000000&radius=10&font=Roboto&direction=CountUp&loop=true
+    </div>
+    
+    <h2>Quick Test</h2>
+    <p><a href="timer.html?time=60&colour=414141&size=100&background=transparent&radius=0&font=Anton&direction=CountDown&loop=false" target="_blank">Test 1-minute countdown</a></p>
+    
+</body>
+</html> 
